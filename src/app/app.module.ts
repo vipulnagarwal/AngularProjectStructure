@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LoggerModule } from 'ngx-logger';
 import { environment } from '../environments/environment';
@@ -17,7 +16,6 @@ import { environment } from '../environments/environment';
     BrowserModule,
     BrowserAnimationsModule,
     CoreModule,
-    SharedModule,
     AppRoutingModule,
     LoggerModule.forRoot({
       serverLoggingUrl: `${environment.apiUrl}api/logs`,
